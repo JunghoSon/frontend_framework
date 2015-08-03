@@ -1,5 +1,3 @@
-/*! util.validation.js */
-
 var ValidationUtil={
 	is_null:function(val){
 		if(typeof val==='undefined' || val===null){

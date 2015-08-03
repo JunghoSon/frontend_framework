@@ -107,6 +107,8 @@ gulp.task('images',function(){
 /* livereload */
 gulp.task('watch',function(){
 	livereload.listen();
+	gulp.watch(config.path.js.src.libs,['scripts']);
+	gulp.watch(config.path.js.src.plugin,['scripts']);
 	gulp.watch(config.path.js.src.app+'**/*.js',['scripts']);
 	gulp.watch(config.path.css.src,['styles']);
 	gulp.watch(config.path.html.src,['html']);
