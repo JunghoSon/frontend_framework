@@ -1,0 +1,5 @@
+/* button */
+.button-type1{display:inline-block;padding:0 13px;height:32px;line-height:32px;background:#70c989;font-size:14px;font-weight:bold;color:#fff;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px}
+
+/* padding */
+.padd-top-25{padding-top:25px !important}

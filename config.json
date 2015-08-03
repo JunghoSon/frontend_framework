@@ -1,0 +1,60 @@
+ {
+	"lint"   : {
+		"html"    : false,
+		"scripts" : true,
+		"styles"  : false	
+	},
+
+	"concat" : {
+		"html"    : false,
+		"scripts" : true,
+		"styles"  : true	
+	},
+	
+	"uglify" : {
+		"html"    : false,
+		"scripts" : true,
+		"styles"  : true
+	},
+	
+	"uglify_option":{
+		"mangle"           : false,
+		"preserveComments" : "some"
+	},
+
+	"rename" : {
+		"html"    : false,
+		"scripts" : true,
+		"styles"  : true	
+	},
+	
+	"rename_option":{
+		"suffix" : ".min"
+	},
+
+	"path":{
+		"dist":"public/dist/",
+
+		"js":{
+			"src"  : "public/src/js/",
+			"dest" : "public/dist/js/",
+			"result" : "scripts.js"
+		},
+
+		"css":{
+			"src"    : "public/src/css/*.css",
+			"dest"   : "public/dist/css/",
+			"result" : "style.css"
+		},
+
+		"html":{
+			"src"    : "public/src/html/*.html",
+			"dest"   : "public/dist/html/"
+		},
+
+		"images":{
+			"src"    : "public/src/images/*",
+			"dest"   : "public/dist/images/"
+		}
+	}
+}
