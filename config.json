@@ -1,19 +1,37 @@
  {
 	"lint"   : {
 		"html"    : false,
-		"scripts" : true,
+		
+		"scripts" : {
+			"app"    : true,
+			"libs"   : false,
+			"plugin" : false
+		},
+
 		"styles"  : false	
 	},
 
 	"concat" : {
 		"html"    : false,
-		"scripts" : true,
+
+		"scripts" : {
+			"app"    : true,
+			"libs"   : false,
+			"plugin" : false
+		},
+
 		"styles"  : true	
 	},
 	
 	"uglify" : {
 		"html"    : false,
-		"scripts" : true,
+
+		"scripts" : {
+			"app"    : true,
+			"libs"   : false,
+			"plugin" : false
+		},
+
 		"styles"  : true
 	},
 	
@@ -24,7 +42,13 @@
 
 	"rename" : {
 		"html"    : false,
-		"scripts" : true,
+
+		"scripts" : {
+			"app"    : true,
+			"libs"   : false,
+			"plugin" : false
+		},
+		
 		"styles"  : true	
 	},
 	
@@ -36,8 +60,18 @@
 		"dist":"public/dist/",
 
 		"js":{
-			"src"  : "public/src/js/",
-			"dest" : "public/dist/js/",
+			"src":{
+				"app"        : "public/src/js/app/",
+				"libs"       : "public/src/js/libs/*.js",
+				"plugin"     : "public/src/js/plugin/*.js"
+			},
+
+			"dest":{
+				"app"        : "public/dist/js/app/",
+				"libs"       : "public/dist/js/libs/",
+				"plugin"     : "public/dist/js/plugin/"
+			},
+
 			"result" : "scripts.js"
 		},
 
